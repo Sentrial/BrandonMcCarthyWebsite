@@ -1,3 +1,6 @@
+:root {
+    --sgreen: #2c6638;
+}
 @font-face {
     font-family: montserrat-normal;
     src: url(../resources/fonts/Montserrat-VariableFont_wght.ttf);
@@ -61,7 +64,7 @@ h1 {
     font-weight: 700;
     font-size: 65px;
     padding-bottom: 30px;
-    color: #2c6638;
+    color: var(--sgreen);
 }
 
 button {
@@ -87,7 +90,7 @@ button {
     margin: 0px;
     position: absolute;
     z-index: -1;
-    background-image: url('../resources/images/star.png');
+    background-image: url('../resources/images/website-BG.png');
     background-repeat: repeat-x;
     opacity: 1;
 }
@@ -97,7 +100,7 @@ button {
     height: 100%;
     padding: 0px;
     margin: 0px;
-    background-image: url('../resources/images/star-blur.png');
+    background-image: url('../resources/images/website-BG-blur.png');
     background-repeat: repeat-x;
     opacity: 0;
 }
@@ -202,7 +205,7 @@ header div {
 
 #name {
     font-size: 100px;
-    width: 80%;
+    width: 75%;
     padding: 0px;
     margin: 20px auto;
     background-color: rgba(255, 255, 255, .02);
@@ -397,7 +400,7 @@ header div {
 }
 
 .about-me__text-container span {
-    color: #2c6638;
+    color: var(--sgreen);
 }
 
 #about-me img {

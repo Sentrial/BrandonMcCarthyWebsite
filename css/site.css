@@ -69,6 +69,7 @@ h1 {
     color: var(--sgreen);
     font-weight: bold;
     font-size: calc(100% + 2vw + 2vh);
+    padding-bottom: 20px;
 }
 
 button {
@@ -199,6 +200,7 @@ header div {
 .main-name h1 {
     font-size: calc(100% + 3vw + 3vh);
     font-weight: bold;
+    padding-bottom: 0px;
 }
 
 #headline {

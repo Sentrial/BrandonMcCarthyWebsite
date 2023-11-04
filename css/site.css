@@ -470,8 +470,29 @@ header div {
     font-size: 20px;
 }
 
-/* Content */
+@media only screen and (max-width: 767px) {
+    .about-me__content {
+        display: grid;
+        padding-bottom: 40px;
+    }
 
+    .about-me__text-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-me__text-container p {
+        text-align: center;
+    }
+
+    .about-me__image-container {
+        grid-row-start: 1;
+        margin: 20px 0px;
+    }
+}
+
+
+/* Content */
 
 .video-grid {
     display: grid;

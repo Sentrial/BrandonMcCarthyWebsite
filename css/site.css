@@ -405,6 +405,7 @@ header div {
 .about-me__content {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .about-me__content div {
@@ -514,6 +515,7 @@ header div {
 }
 
 .video {
+    margin: 50px 70px 0px;
     border: 2px solid white;
     box-shadow: white 0px 0px 20px;
 }

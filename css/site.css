@@ -51,19 +51,15 @@ body {
 }
 
 section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 40px 0px;
     text-align: center;
 }
 
-div {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 h1 {
-    font-weight: 700;
-    font-size: 65px;
-    padding-bottom: 30px;
     color: var(--sgreen);
 }
 
@@ -176,16 +172,20 @@ header div {
 
 
 /* Main */
+#main {
+    padding-top: 15vh;
+}
 
-#name {
-    font-size: 100px;
-    width: 75%;
-    padding: 0px;
-    margin: 20px auto;
+.main-name {
     background-color: rgba(255, 255, 255, .02);
     border-radius: 10px;
     backdrop-filter: blur(3px);
     box-shadow: rgba(255,255,255,.25) 0px 0px 10px;
+}
+
+.main-name h1 {
+    font-size: calc(100% + 3vw + 3vh);
+    font-weight: bold;
 }
 
 #headline {

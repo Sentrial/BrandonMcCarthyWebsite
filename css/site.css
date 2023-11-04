@@ -110,15 +110,30 @@ button {
 
 .navbar {
     display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    transition: all .5s;
-    padding: 0px 0px;
-    margin: 0;
+    justify-content: space-between;
+    z-index: 99;
     width: 100%;
-    position: fixed;
-    z-index: 10;
+    padding-top: 0;
+}
+
+.navbar div {
+    padding: 10px 0px;
+}
+
+#navbarNav a {
+    transition: all .5s;
+    color: rgb(220,220,220);
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+#navbarNav a:hover {
+    transition: all .5s;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    text-shadow: white 0px 0px 30px;
 }
 
 header div {
@@ -126,34 +141,21 @@ header div {
 }
 
 .container-fluid {
-    width: 100%;
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
+    background-color: rgba(0,0,0,.9);
+    box-shadow: white 0px 0px 20px;
 }
 
 .scroll-down .container-fluid {
     transition: all .5s;
     transform: translate3d(0, -100%, 0);
+    box-shadow: none;
 }
 
 .scroll-up .container-fluid {
     transition: all .5s;
-    background-color: black;
+    background-color: rgba(0,0,0,.9);
     transform: translate3d(0, 0%, 0);
     box-shadow: white 0px 0px 20px;
-    opacity: .9;
-}
-
-.navbar div {
-    padding: 10px 0px;
-}
-
-.navbar-buttons {
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 #home-button {
@@ -170,34 +172,6 @@ header div {
 #home-button:hover img {
     transition: .5s;
     transform: rotate(360deg);
-}
-
-
-.navbar-buttons ul {
-    margin-right: 50px;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
-
-.navbar-buttons li {
-    padding: 0px 20px;
-}
-
-.navbar-buttons li a {
-    transition: all .5s;
-    color: white;
-    font-size: 25px;
-    font-weight: normal;
-    text-decoration: none;
-}
-
-.navbar-buttons li a:hover {
-    transition: all .5s;
-    color: white;
-    font-size: 27px;
-    font-weight: 500;
-    text-shadow: white 0px 0px 30px;
 }
 
 

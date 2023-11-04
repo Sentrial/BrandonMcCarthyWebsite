@@ -375,6 +375,7 @@ header div {
 
     .slider__content {
         display: block;
+        padding: 0px;
     }
 
     .image-stack {

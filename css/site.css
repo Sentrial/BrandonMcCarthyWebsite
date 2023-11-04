@@ -533,6 +533,13 @@ header div {
 
     .video-container {
         padding: 10px 0px;
+        align-items: center;
+    }
+
+    .video {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
     }
 }
 

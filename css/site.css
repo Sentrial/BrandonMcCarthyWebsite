@@ -40,8 +40,8 @@ body {
 }
 
 main {
-    width: 80%;
-    margin: 75px auto 50px;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -55,17 +55,26 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 0px;
+    padding: 4vh 8vw;
     text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    section {
+        padding: 4vh 3vw;
+    }
 }
 
 h1 {
     color: var(--sgreen);
+    font-weight: bold;
+    font-size: calc(100% + 2vw + 2vh);
 }
 
 button {
     cursor: pointer;
 }
+
 
 
 /* Background Image */
@@ -196,10 +205,14 @@ header div {
 
 /*Projects*/
 
+.carousel-indicators {
+    top: -2em;
+}
+
 .slider {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 50vh;
     padding-top: 0px;
     margin: 0 auto;
 }
@@ -224,14 +237,14 @@ header div {
 
 .slider__indicator:hover {
     transition: all .5s;
-    font-size: 22px;
+    transform: scale(1.2);
     text-shadow: white 0px 0px 10px;
 }
 
 .slider__indicator.current-slide {
     transition: all .5s;
     text-shadow: white 0px 0px 7px;
-    font-size: 23px;
+    transform: scale(1.1);
     font-weight: 600;
 }
 
@@ -347,6 +360,39 @@ header div {
 .image-grid img {
     width: 100%;
     border: 1px solid white;
+}
+
+@media only screen and (max-width: 767px) {
+    #projects {
+        margin-bottom: 100px;
+    }
+
+    .slider__content {
+        display: block;
+    }
+
+    .image-stack {
+        display: inline-block;
+        padding: 0px;
+    }
+    
+    .image-stack-item--top {
+        margin: 0;
+        padding: 0;
+        float: none;
+        width: auto;
+    }
+    
+    .image-stack-item--bottom {
+        margin: 0;
+        padding: 0;
+        float: none;
+        width: auto;
+    }
+
+    .image-stack-item img {
+        width: 40%;
+    }
 }
 
 

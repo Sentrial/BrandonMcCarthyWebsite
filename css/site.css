@@ -497,6 +497,19 @@ header div {
         grid-row-start: 1;
         margin: 20px 0px;
     }
+
+    .about-me__lists {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-content: center;
+    }
+    .about-me__lists div {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    
 }
 
 
